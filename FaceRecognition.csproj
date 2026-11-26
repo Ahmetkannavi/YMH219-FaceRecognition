@@ -8,4 +8,8 @@
     <Nullable>enable</Nullable>
     <ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
   </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="OpenCvSharp4.Windows" Version="4.13.0.20261107" />
+  </ItemGroup>
+  <ItemGroup><None Update="Assets/frontalface.xml;Assets/Demo/**/*.jpg" CopyToOutputDirectory="PreserveNewest" /></ItemGroup>
 </Project>
