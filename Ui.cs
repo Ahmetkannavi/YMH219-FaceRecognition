@@ -49,6 +49,8 @@ internal static class Ui
     public static Control Header(string title, string subtitle)
     {
         var box = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 2, BackColor = Ink, Padding = new Padding(16, 6, 12, 6), Margin = Padding.Empty };
+        box.RowCount = 1;
+        box.RowStyles.Add(new RowStyle(SizeType.Percent, 100));
         box.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 58));
         box.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100));
         var mark = new PictureBox { Dock = DockStyle.Fill, SizeMode = PictureBoxSizeMode.Zoom, Margin = new Padding(0, 4, 10, 4) };
